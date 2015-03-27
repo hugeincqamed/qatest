@@ -1,0 +1,28 @@
+package ejercicio_Huge;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+public class vector {
+    
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        int[] array = {0,1,2,3,4,5,6,7,8,9,10};
+        ArrayList<Integer> lista_pares = new ArrayList<Integer>();
+        ArrayList<Integer> lista_impares = new ArrayList<Integer>();
+        for (int i = 0; i<= array.length -1;i++)
+        {
+            if (array[i] % 2 == 0)
+            {
+                lista_pares.add(array[i]);
+            }
+            else if (array[i] > 1 && array[i] % 2 != 0)
+            {
+                lista_impares.add(array[i]);
+            }
+        }
+        System.out.println(lista_pares);
+        System.out.println(lista_impares);
+    }
+
+}
